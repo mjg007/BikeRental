@@ -17,14 +17,21 @@ namespace BikeRental
             Bikes.Add(bike);
         }
 
-        public int GetPrice()
+        public double GetPrice()
         {
-            int result = 0;
-            foreach (Bike bike in Bikes)
+            if (Bikes.Count > 2 && Bikes.Count < 6)
             {
-                result += bike.GetPrice();
+                int result = 0;
+                foreach (Bike bike in Bikes)
+                {
+                    result += bike.GetPrice();
+                }
+                return result * 0.7;
             }
-            return result;
+            else
+            {
+                return -1;
+            }
         }
     }
 }
