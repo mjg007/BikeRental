@@ -9,28 +9,25 @@ namespace BikeRental.Tests
         [TestMethod]
         public void CreateHourBike()
         {
-            Bike hourBike = new Bike();
-            hourBike.SetTypeBike("H");
+            Bike hourBike = new Bike("H");
 
-            Assert.AreEqual(hourBike.GetPrice(), 5);
+            Assert.AreEqual(hourBike.Price, 5);
         }
 
         [TestMethod]
         public void CreateDayBike()
         {
-            Bike dayBike = new Bike();
-            dayBike.SetTypeBike("D");
+            Bike dayBike = new Bike("D");
 
-            Assert.AreEqual(dayBike.GetPrice(), 20);
+            Assert.AreEqual(dayBike.Price, 20);
         }
 
         [TestMethod]
         public void CreateWeekyBike()
         {
-            Bike weekBike = new Bike();
-            weekBike.SetTypeBike("W");
+            Bike weekBike = new Bike("W");
 
-            Assert.AreEqual(weekBike.GetPrice(), 60);
+            Assert.AreEqual(weekBike.Price, 60);
         }
     }
 }

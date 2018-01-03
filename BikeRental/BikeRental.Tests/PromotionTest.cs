@@ -15,12 +15,9 @@ namespace BikeRental.Tests
         {
             Promotion promotion = new Promotion();
 
-            Bike hourBike = new Bike();
-            hourBike.SetTypeBike("H");
-            Bike dayBike = new Bike();
-            dayBike.SetTypeBike("D");
-            Bike weekBike = new Bike();
-            weekBike.SetTypeBike("W");
+            Bike hourBike = new Bike("H");
+            Bike dayBike = new Bike("D");
+            Bike weekBike = new Bike("W");
 
             promotion.AddBike(hourBike);
             promotion.AddBike(dayBike);
@@ -34,10 +31,8 @@ namespace BikeRental.Tests
         {
             Promotion promotion = new Promotion();
 
-            Bike hourBike = new Bike();
-            hourBike.SetTypeBike("H");
-            Bike dayBike = new Bike();
-            dayBike.SetTypeBike("D");
+            Bike hourBike = new Bike("H");
+            Bike dayBike = new Bike("D");
 
             promotion.AddBike(hourBike);
             promotion.AddBike(dayBike);

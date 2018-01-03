@@ -24,7 +24,7 @@ namespace BikeRental
                 int result = 0;
                 foreach (Bike bike in Bikes)
                 {
-                    result += bike.GetPrice();
+                    result += bike.Price;
                 }
                 return result * 0.7;
             }

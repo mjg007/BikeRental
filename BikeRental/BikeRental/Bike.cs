@@ -6,26 +6,29 @@ namespace BikeRental
 {
     public class Bike
     {
-        private string BikeType { set; get; }
 
-        public int GetPrice()
+        public Bike(string type)
         {
-            switch (BikeType)
+            switch (type)
             {
                 case "H":
-                    return 5;
+                    Price = 5;
+                    break;
                 case "D":
-                    return 20;
+                    Price = 20;
+                    break;
                 case "W":
-                    return 60;
+                    Price = 60;
+                    break;
                 default:
-                    return 0;
+                    Price = 0;
+                    break;
+
             }
         }
 
-        public void SetTypeBike(string typeByke)
-        {
-            this.BikeType = typeByke;
-        }
+        public string BikeType { set; get; }
+        public int Price { set; get; }
+
     }
 }
