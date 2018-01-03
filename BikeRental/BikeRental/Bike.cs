@@ -25,6 +25,8 @@ namespace BikeRental
                     break;
 
             }
+
+            BikeType = type;
         }
 
         public string BikeType { set; get; }
