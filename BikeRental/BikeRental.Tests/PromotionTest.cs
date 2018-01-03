@@ -27,6 +27,21 @@ namespace BikeRental.Tests
         }
 
         [TestMethod]
+        public void CreatePromotionWithArrayOfBikes()
+        {
+            Promotion promotion = new Promotion();
+            List<Bike> bikes = new List<Bike>();
+
+            bikes.Add(new Bike("H"));
+            bikes.Add(new Bike("D"));
+            bikes.Add(new Bike("W"));
+
+            promotion.AddBikesArray(bikes);
+
+            Assert.AreEqual(promotion.GetPrice(), 59, 5);
+        }
+
+        [TestMethod]
         public void CreateBadPromotion()
         {
             Promotion promotion = new Promotion();

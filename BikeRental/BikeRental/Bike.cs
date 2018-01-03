@@ -6,7 +6,6 @@ namespace BikeRental
 {
     public class Bike
     {
-
         public Bike(string type)
         {
             switch (type)
@@ -28,9 +27,7 @@ namespace BikeRental
 
             BikeType = type;
         }
-
         public string BikeType { set; get; }
         public int Price { set; get; }
-
     }
 }

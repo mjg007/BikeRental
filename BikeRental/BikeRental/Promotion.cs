@@ -17,6 +17,14 @@ namespace BikeRental
             Bikes.Add(bike);
         }
 
+        public void AddBikesArray(List<Bike> bikes)
+        {
+            foreach (Bike bike in bikes)
+            {
+                Bikes.Add(bike);
+            }
+        }
+
         public double GetPrice()
         {
             if (Bikes.Count > 2 && Bikes.Count < 6)
